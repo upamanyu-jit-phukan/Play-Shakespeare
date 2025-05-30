@@ -1,6 +1,6 @@
 {
-    "name": "play_shakespeare",
-    "short_name": "play_shakespeare",
+    "name": "typeracer",
+    "short_name": "typeracer",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -1,4 +1,4 @@
-# play_shakespeare
+# typeracer
 
 A new Flutter project.
 
