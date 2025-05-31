@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:play_shakespeare/widgets/custom_button.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,8 @@ class HomeScreen extends StatelessWidget {
       // backgroundColor: const Color(0xFFc0bfbf), // ice-iy
       // backgroundColor: const Color(0xFFD7CDAC), // light-yellowish
       // backgroundColor: const Color(0xFFE8D9C4), // Beige
-      backgroundColor: const Color(0xFFFFFBF0), // Ivory Whisper
+      // backgroundColor: const Color(0xFFFFFBF0), // Ivory Whisper
+      backgroundColor: const Color(0xFFF0E7D5), // Vanilla Cream
       body: SafeArea(
         child: Center(
           child: ConstrainedBox(
@@ -29,7 +30,8 @@ class HomeScreen extends StatelessWidget {
                     fontSize: 32,
                     // color: Color(0xFF3E160C), // Rough Brown (for contrast)
                     // color: const Color(0xFF3E160C), // Vino
-                    color: Color(0xFF53161D), // Bordeaux Velvet
+                    // color: Color(0xFF53161D), // Bordeaux Velvet
+                    color: Color(0xFF4B3935), // Mocha Earth
                     fontWeight: FontWeight.w900,
                     height: 1.4,
                     letterSpacing: 1.2,
@@ -46,7 +48,8 @@ class HomeScreen extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                       // color: Color(0xFF342316), // Wetlands Swamp
                       // color: Color(0xFF462506), // Bistre
-                      color: Color(0xFF53161D), // Bordeaux Velvet
+                      // color: Color(0xFF53161D), // Bordeaux Velvet
+                      color: Color(0xFF4B3935), // Mocha Earth
                     ),
                   ),
                 ),

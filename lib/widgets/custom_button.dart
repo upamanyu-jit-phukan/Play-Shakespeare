@@ -8,14 +8,14 @@ class CustomButton extends StatelessWidget {
   final Color fgColor;
 
   const CustomButton({
-    Key? key,
+    super.key,
     required this.text,
     required this.onTap,
     this.isHome = false,
-    this.bgColor = const Color(0xFF53161D), // Bordeaux Velvet
-    this.fgColor = const Color(0xFFFFFBF0), // Ivory Whisper
+    this.bgColor = const Color(0xFF4B3935), // Mocha Earth
+    this.fgColor = const Color(0xFFF0E7D5), // Vanilla Cream
 
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

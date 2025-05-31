@@ -3,7 +3,7 @@ import 'package:play_shakespeare/widgets/custom_button.dart';
 import 'package:play_shakespeare/widgets/custom_text_field.dart';
 
 class LearnRoomScreen extends StatefulWidget {
-  const LearnRoomScreen({Key? key}) : super(key: key);
+  const LearnRoomScreen({super.key});
 
   @override
   State<LearnRoomScreen> createState() => _LearnRoomScreenState();

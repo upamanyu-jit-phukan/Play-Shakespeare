@@ -3,7 +3,7 @@ import 'package:play_shakespeare/widgets/custom_button.dart';
 import 'package:play_shakespeare/widgets/custom_text_field.dart';
 
 class CompeteRoomScreen extends StatefulWidget {
-  const CompeteRoomScreen({Key? key}) : super(key: key);
+  const CompeteRoomScreen({super.key});
 
   @override
   State<CompeteRoomScreen> createState() => _CompeteRoomScreenState();
@@ -55,7 +55,7 @@ class _CompeteRoomScreenState extends State<CompeteRoomScreen> {
                 ),
                 SizedBox(height: size.height * 0.03),
                 CustomButton(
-                  text: 'Compete',
+                  text: 'Start Competition',
                   onTap: () {},
                   bgColor: Color(0xFF4B3935), // Mocha Earth
                   fgColor: const Color(0xFFF0E7D5), // Vanilla Cream
