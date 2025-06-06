@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:play_shakespeare/utils/socket_methods.dart';
 import 'package:play_shakespeare/widgets/custom_button.dart';
 import 'package:play_shakespeare/widgets/custom_text_field.dart';
 
-class LearnRoomScreen extends StatefulWidget {
-  const LearnRoomScreen({super.key});
+class CreateRoomScreen extends StatefulWidget {
+  const CreateRoomScreen({super.key});
 
   @override
-  State<LearnRoomScreen> createState() => _LearnRoomScreenState();
+  State<CreateRoomScreen> createState() => _CreateRoomScreenState();
 }
 
-class _LearnRoomScreenState extends State<LearnRoomScreen> {
+class _CreateRoomScreenState extends State<CreateRoomScreen> {
   final TextEditingController _nameController = TextEditingController();
+  final SocketMethods _socketMethods = SocketMethods();
 
   @override
   void dispose() {
@@ -33,7 +35,7 @@ class _LearnRoomScreenState extends State<LearnRoomScreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  'Learn room screen',
+                  'Create room screen',
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.w600,
@@ -44,12 +46,14 @@ class _LearnRoomScreenState extends State<LearnRoomScreen> {
                 SizedBox(height: size.height * 0.08),
                 CustomTextField(
                   controller: _nameController,
-                  hintText: 'Difficulty of Learning',
+                  hintText: 'Enter Title',
                 ),
                 SizedBox(height: size.height * 0.03),
                 CustomButton(
-                  text: 'Start Learning',
-                  onTap: () {},
+                  text: 'Create Contest',
+                  onTap: () => _socketMethods.createGame(
+                    _nameController.text,
+                  ),
                   bgColor: Color(0xFF4B3935), // Mocha Earth
                   fgColor: const Color(0xFFF0E7D5), // Vanilla Cream
                 ),

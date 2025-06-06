@@ -27,6 +27,7 @@ class HomeScreen extends StatelessWidget {
                   'Play Shakespeare',
                   textAlign: TextAlign.center,
                   style: TextStyle(
+                    fontFamily: 'DellaRespira',
                     fontSize: 32,
                     // color: Color(0xFF3E160C), // Rough Brown (for contrast)
                     // color: const Color(0xFF3E160C), // Vino
@@ -41,9 +42,10 @@ class HomeScreen extends StatelessWidget {
                 Container(
                   constraints: BoxConstraints(maxWidth: size.width * 0.65),
                   child: const Text(
-                    'Pray, dost thou come in pursuit of wisdom, or to prove thy worth?',
+                    'Pray, dost thou wish to host, or to contest?',
                     textAlign: TextAlign.center,
                     style: TextStyle(
+                      fontFamily: 'Garamond',
                       fontSize: 24,
                       fontWeight: FontWeight.w600,
                       // color: Color(0xFF342316), // Wetlands Swamp
@@ -58,13 +60,14 @@ class HomeScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     CustomButton(
-                      text: 'Learn',
-                      onTap: () => Navigator.pushNamed(context, '/learn-room'),
+                      text: 'Create Room',
+                      onTap: () => Navigator.pushNamed(context, '/create-room'),
                       isHome: true,
                     ),
+                    const Spacer(),
                     CustomButton(
-                      text: 'Compete',
-                      onTap: () => Navigator.pushNamed(context, '/compete-room'),
+                      text: 'Join Room',
+                      onTap: () => Navigator.pushNamed(context, '/join-room'),
                       isHome: true,
                     ),
                   ],
